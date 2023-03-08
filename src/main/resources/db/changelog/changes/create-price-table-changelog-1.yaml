@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0
+      author: miguel
+      changes:
+        - createTable:
+            tableName: price
+            columns:
+              - column:
+                  name: id
+                  autoIncrement: true
+                  type: int
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: id_brand
+                  type: int
+              - column:
+                  name: start_date
+                  type: timestamp
+              - column:
+                  name: end_date
+                  type: timestamp
+              - column:
+                  name: list_price
+                  type: int
+              - column:
+                  name: id_product
+                  type: int
+              - column:
+                  name: priority
+                  type: int
+              - column:
+                  name: price
+                  type: real
+              - column:
+                  name: curr
+                  type: varchar(3)
